@@ -1,11 +1,17 @@
 package main
 
 import (
-	"LeetCodeSolutions/maps_frequencies"
+	"LeetCodeSolutions/slices_pointers"
 	_ "LeetCodeSolutions/strings_slices"
 	"fmt"
 )
 
 func main() {
-	fmt.Println(maps_frequencies.TopKFrequent([]int{1, 1, 0, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5}, 2))
+	//fmt.Println(maps_frequencies.TopKFrequent([]int{1, 1, 0, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5}, 2))
+	//slices_pointers.Merge([]int{4, 5, 6, 0, 0, 0}, 3, []int{1, 2, 3}, 3)
+	//slices_pointers.MoveZeroes([]int{0, 2, 0, 3})
+	//fmt.Println(slices_pointers.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
+	//fmt.Println(slices_pointers.MaxProfit([]int{2, 6, 1, 3, 1}))
+	fmt.Println(slices_pointers.RemoveDuplicates([]int{1}))
+
 }
