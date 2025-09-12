@@ -2,7 +2,7 @@ package main
 
 import (
 	"LeetCodeSolutions/binary_trees"
-	"LeetCodeSolutions/other"
+	"LeetCodeSolutions/linked_lists"
 	_ "LeetCodeSolutions/strings_slices"
 	"fmt"
 )
@@ -57,6 +57,33 @@ func main() {
 
 	//fmt.Println(other.ClimbStairs(1))
 
-	fmt.Println(other.Search([]int{-5, -1, 0, 3, 5, 9, 12, 18}, 18))
+	//fmt.Println(other.Search([]int{-5, -1, 0, 3, 5, 9, 12, 18}, 18))
 
+	//slices_pointers.RemoveElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
+
+	//[5,4,3,2,1,1]
+	listN1 := linked_lists.ListNode{Val: 5}
+	listN2 := linked_lists.ListNode{Val: 4}
+	listN3 := linked_lists.ListNode{Val: 3}
+	listN4 := linked_lists.ListNode{Val: 2}
+	listN5 := linked_lists.ListNode{Val: 1}
+
+	listN1.Next = &listN2
+	listN2.Next = &listN3
+	listN3.Next = &listN4
+	listN4.Next = &listN5
+
+	printLinkedList(&listN1)
+	l := linked_lists.RemoveElements(&listN1, 1)
+	printLinkedList(l)
+
+}
+
+func printLinkedList(node *linked_lists.ListNode) {
+	current := node
+	for current != nil {
+		fmt.Print(current.Val, " -> ")
+		current = current.Next
+	}
+	fmt.Println(nil)
 }
