@@ -3,6 +3,7 @@ package main
 import (
 	"LeetCodeSolutions/binary_trees"
 	"LeetCodeSolutions/linked_lists"
+	"LeetCodeSolutions/strings_slices"
 	_ "LeetCodeSolutions/strings_slices"
 	"fmt"
 )
@@ -73,9 +74,15 @@ func main() {
 	listN3.Next = &listN4
 	listN4.Next = &listN5
 
-	printLinkedList(&listN1)
-	l := linked_lists.RemoveElements(&listN1, 1)
-	printLinkedList(l)
+	//printLinkedList(&listN1)
+	//l := linked_lists.RemoveElements(&listN1, 1)
+	//printLinkedList(l)
+
+	//fmt.Println(other.SearchInsert([]int{1, 2, 3, 4, 7}, 6))
+	//fmt.Println(strings_slices.ConvertToTitle(28))
+	//fmt.Println(strings_slices.TitleToNumber("AAA"))
+
+	fmt.Println(strings_slices.LengthOfLastWord("hello world   "))
 
 }
 
