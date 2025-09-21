@@ -82,7 +82,9 @@ func main() {
 	//fmt.Println(strings_slices.ConvertToTitle(28))
 	//fmt.Println(strings_slices.TitleToNumber("AAA"))
 
-	fmt.Println(strings_slices.LengthOfLastWord("hello world   "))
+	//fmt.Println(strings_slices.LengthOfLastWord("hello world   "))
+
+	fmt.Println(strings_slices.MergeAlternately("abcccccccccccccccccccccc", "deffffaaa"))
 
 }
 
