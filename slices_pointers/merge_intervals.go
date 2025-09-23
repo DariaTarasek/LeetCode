@@ -55,12 +55,10 @@ func MergeIntervals1(intervals [][]int) [][]int {
 	for _, interval := range intervals[1:] {
 		last := res[len(res)-1]
 		if interval[0] <= last[1] {
-			// пересекаются → расширяем
 			if interval[1] > last[1] {
 				res[len(res)-1][1] = interval[1]
 			}
 		} else {
-			// не пересекаются → добавляем новый интервал
 			res = append(res, interval)
 		}
 	}

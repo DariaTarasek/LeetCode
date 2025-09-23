@@ -83,10 +83,11 @@ func main() {
 	//fmt.Println(strings_slices.TitleToNumber("AAA"))
 
 	//fmt.Println(strings_slices.LengthOfLastWord("hello world   "))
-
 	//fmt.Println(strings_slices.MergeAlternately("abcccccccccccccccccccccc", "deffffaaa"))
+	//fmt.Println(slices_pointers.MergeIntervals([][]int{{1, 3}, {0, 2}, {2, 3}, {4, 6}, {4, 5}, {5, 5}, {0, 2}, {3, 3}}))
 
-	fmt.Println(slices_pointers.MergeIntervals([][]int{{1, 3}, {0, 2}, {2, 3}, {4, 6}, {4, 5}, {5, 5}, {0, 2}, {3, 3}}))
+	fmt.Println(slices_pointers.InsertInterval([][]int{{1, 3}, {4, 6}, {8, 10}}, []int{5, 9}))
+	//fmt.Println(slices_pointers.InsertInterval([][]int{}, []int{5, 9}))
 
 }
 
